@@ -72,7 +72,7 @@ while (contador < 10) {
     contador++;
 }
 
-// Path: main.js
+
 /*
     Ejercicio #3: Uso del for
     Fecha: 15/02/2023
@@ -86,7 +86,7 @@ for (let i = 0; i < 10; i++) {
     document.write(`El contador es: ${i} <br>` );
 }
 
-// Path: main.js
+
 /*
     Ejercicio #4: Uso del do while
     Fecha: 15/02/2023
@@ -137,6 +137,73 @@ let array = ["Hola", " Mundo", "!", " ¿", "Como", " Estas", "?"];
 for (let x of array) {
     document.write(`${x}`);
 }
+
+/*
+    Ejercicio #7: Uso del break
+    Fecha: 15/02/2023
+
+    Este ejercicio nos muestra como usar un break
+    dando como ejemplo un contador que se aumenta
+    cada vez que se ejecuta el codigo
+*/
+
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        break;
+    }
+    document.write(`El contador es: ${i} <br>` );
+}
+
+// Path: main.js
+/*
+    Ejercicio #8: Uso del continue
+    Fecha: 15/02/2023
+
+    Este ejercicio nos muestra como usar un continue
+    dando como ejemplo un contador que se aumenta
+    cada vez que se ejecuta el codigo
+*/
+
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        continue;
+    }
+    document.write(`El contador es: ${i} <br>` );
+}
+
+// Path: main.js
+/*
+    Ejercicio #9: Uso del return
+    Fecha: 15/02/2023
+
+    Este ejercicio nos muestra como usar un return
+    dando como ejemplo una funcion que retorna un
+    valor
+*/
+
+function sumar(a, b) {
+    return a + b;
+}
+
+document.write(`La suma de 2 + 2 es ${sumar(2, 2)}`);
+
+// Path: main.js
+/*
+    Ejercicio #10: Uso del try catch
+    Fecha: 15/02/2023
+
+    Este ejercicio nos muestra como usar un try catch
+    dando como ejemplo un error que se muestra en
+    consola
+*/
+
+try {
+    noExiste;
+} catch (error) {
+    console.log(error);
+}
+
+
 
 
 
